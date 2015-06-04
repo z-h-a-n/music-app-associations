@@ -1,0 +1,8 @@
+<div class="list">
+	<% @albums.each do |album| %>
+    <div class="list-album">
+    	<%= link_to(album.name, album_path(album.id))  %>
+    </div>
+	<% end %>
+
+</div>
